@@ -57,7 +57,7 @@ body {
   background: none;
   cursor: pointer;
   border-radius: 10px;
-  height: 75px;
+  height: 80px;
   margin-bottom: 15px;
   align-items: center;
 
@@ -153,9 +153,9 @@ display: flex;
   margin-bottom: 4px;
 }
 
-.but-marg{
-  margin-bottom: 30px;
-}
+/*.but-marg{*/
+/*  margin-bottom: 30px;*/
+/*}*/
 .text {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -199,4 +199,10 @@ display: flex;
   font-size: 20px;
   font-weight: 500;
   line-height: 90%;
+}
+
+.pustota{
+  width: 100%;
+  height: 50px;
+  border: 1px solid transparent;
 }
