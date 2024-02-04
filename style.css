@@ -1,0 +1,141 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--tg-theme-bg-color);
+  /* margin: 0; */
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+section {
+  padding-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.head__begin {
+  display: flex;
+  justify-content: center;
+}
+
+.head__h1 {
+  color: var(--tg-theme-text-color);
+}
+
+.head__end {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.head__button__balance {
+  display: flex;
+  justify-content: center;
+}
+
+.head__button__friends {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.head__text {
+  color: var(--tg-theme-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 120%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 3px;
+}
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__button__mode1 {
+  border: 1px solid black;
+  background: black;
+  margin-bottom: 7px;
+  padding: 10px 5px;
+  border-radius: 3px;
+}
+.main__button__mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hui {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.main__text {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 120%;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* margin-left: 45px; */
+}
+
+.footer__text {
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 120%;
+}
+
+.test__button__mode1 {
+  margin-bottom: 0px;
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+.test__button__mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
