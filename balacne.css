@@ -153,9 +153,9 @@ display: flex;
   margin-bottom: 4px;
 }
 
-/*.but-marg{*/
-/*  margin-bottom: 30px;*/
-/*}*/
+.but-marg{
+  margin-bottom: 30px;
+}
 .text {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
