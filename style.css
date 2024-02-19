@@ -1,5 +1,5 @@
 * {
-  /* box-sizing: border-box; */
+   box-sizing: border-box;
 }
 
 html {
@@ -18,6 +18,11 @@ body {
 
 section {
   padding-bottom: 25px;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 a {
@@ -83,8 +88,8 @@ a {
 }
 
 .main__button__mode1 {
-  border: 1px solid black;
-  background: black;
+  border: 1px solid transparent;
+  background: var(--tg-theme-button-color);
   margin-bottom: 7px;
   padding: 10px 5px;
   border-radius: 3px;
@@ -138,4 +143,10 @@ a {
   justify-content: center;
   align-items: center;
   gap: 24px;
+}
+.round{
+  width: 65px; height: 65px; /* Размеры кнопки */
+  background-color: var(--tg-theme-button-color); /* Цвет фона */
+  border-radius: 50%; /* Радиус скругления */
+  border: none; /* Убираем рамку вокруг кнопки */
 }
