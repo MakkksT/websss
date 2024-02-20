@@ -1,3 +1,26 @@
+var MainButton = WebApp.MainButton;
+var BackButton = WebApp.BackButton;
+
+MainButton.show();
+BackButton.show();
+
+MainButton.onClick(function() {
+  WebApp.showAlert("Хорошо, ты нажал на главную кнопку.");
+});
+WebApp.onEvent('mainButtonClicked', function() {
+  /* also */
+});
+
+BackButton.onClick(function() {
+  WebApp.showAlert("Нет пути назад!");
+  
+  BackButton.hide();
+});
+WebApp.onEvent('backButtonClicked', function() {
+  /* also */
+});
+
+
 var buttons = document.querySelectorAll(".but");
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
@@ -25,28 +48,6 @@ function disableAnimation(buttons, activeButton) {
       }
     }
   }, 0); // Задержка в 500 миллисекунд (можно изменить значение по вашему усмотрению)
-
-var MainButton = WebApp.MainButton;
-var BackButton = WebApp.BackButton;
-
-MainButton.show();
-BackButton.show();
-
-MainButton.onClick(function() {
-  WebApp.showAlert("Хорошо, ты нажал на главную кнопку.");
-});
-WebApp.onEvent('mainButtonClicked', function() {
-  /* also */
-});
-
-BackButton.onClick(function() {
-  WebApp.showAlert("Нет пути назад!");
-  
-  BackButton.hide();
-});
-WebApp.onEvent('backButtonClicked', function() {
-  /* also */
-});
 
 // window.onscroll = function() {
 //   var button = document.getElementById("b");
