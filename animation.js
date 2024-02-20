@@ -26,6 +26,28 @@ function disableAnimation(buttons, activeButton) {
     }
   }, 0); // Задержка в 500 миллисекунд (можно изменить значение по вашему усмотрению)
 
+var MainButton = WebApp.MainButton;
+var BackButton = WebApp.BackButton;
+
+MainButton.show();
+BackButton.show();
+
+MainButton.onClick(function() {
+  WebApp.showAlert("Хорошо, ты нажал на главную кнопку.");
+});
+WebApp.onEvent('mainButtonClicked', function() {
+  /* also */
+});
+
+BackButton.onClick(function() {
+  WebApp.showAlert("Нет пути назад!");
+  
+  BackButton.hide();
+});
+WebApp.onEvent('backButtonClicked', function() {
+  /* also */
+});
+
 // window.onscroll = function() {
 //   var button = document.getElementById("b");
 //   if (window.pageYOffset > 5) { // Здесь вы можете настроить величину прокрутки, при которой кнопка будет двигаться
